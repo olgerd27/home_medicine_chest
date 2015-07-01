@@ -1,14 +1,43 @@
-    List of some requirements to the project:
-1.  User must to have an ability to view, insert, update and delete database data.
-2.  Application must plot the next graphs:
+    List of some requirements to the project.
+
+1 General.
+1.1 User must to have an ability to VIEW, INSERT, UPDATE and DELETE database data.
+
+The main window.
+2.1 The main window names "Medicine card". Here you may perform all operation, specified by 1.1.
+    On this window must places all data, relevant to every medicine item, with buttons for walk through medicines items.
+    This window must looks like forms in MS Access.
+2.2 The fields, linked with some database table, must give interface to add new item in linked table.
+2.3 Also this widget must include some interface for:
+    - connection to database;
+    - disconnection from database;
+    - refreshing data in application;
+    - applying changes, inputed in any field of window, to database (INSERT, UPDATE, DELETE);
+    - open window for queries execution;
+    - open window for graphs plotting.
+2.4 If you made some changes in any field you must press Apply (Save) button, and after this you can go to another medicine card.
+    If you don't save inputed changes and try go to another medicine card, application must ask you - Want you save changes? (Yes, No).
+
+3 Graps plotting.
+3.1 Application must plot the next graphs:
     1) graphs window "Expiration dates - Users", that include:
-        - pie chart: quantity of medicine items for every user;
-        - bar graph (stack diagram): X axis - year.month, Y axis - quantity of medicine items for every user,
-          in which the expiration date ends in every year.month;
+       - pie chart: quantity of medicine items for every user;
+       - bar graph (stack diagram): X axis - year.month, Y axis - quantity of medicine items for every user,
+         expiration date of which ends in every year.month;
     2) graphs "Expiration dates - Destinations", that include:
-    - pie chart: quantity of medicine items for every destination;
-3.  Application must inform about ending of expiration dates for any medicine item.
-4.  Application must additional inform when ends the expiration dates of all medicine items for any destination
+       - pie chart: quantity of medicine items for every destination;
+       - bar graph (stack diagram): X axis - year.month, Y axis - quantities of medicine items for every destination,
+         expiration date of which ends in every year.month.
+
+4 Notifications.
+4.1 Application must inform about ending of expiration dates for any medicine item.
+4.2 Application must additional inform when ends the expiration dates of all medicine items for any destination
     (that's means there are no one any suitable medicines items for some destination and there are need go to a drugstore).
-5.  Application must additional inform when ends the expiration dates of all medicine items for any user
+4.3 Application must additional inform when ends the expiration dates of all medicine items for any user
     (that's means this user has't any suitable medicines items and there are need go to a drugstore).
+
+5 Pictures.
+5.1 Medicine's pictures downloads from internet (maybe from google pictures).
+5.2 There are need to download small or medium (no large) medicine's pictures from internet.
+5.3 Actually, medicine's pictures stores in file system and database store the path/name to every picture.
+
