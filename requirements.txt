@@ -1,0 +1,14 @@
+    List of some requirements to the project:
+1.  User must to have an ability to view, insert, update and delete database data.
+2.  Application must plot the next graphs:
+    1) graphs window "Expiration dates - Users", that include:
+        - pie chart: quantity of medicine items for every user;
+        - bar graph (stack diagram): X axis - year.month, Y axis - quantity of medicine items for every user,
+          in which the expiration date ends in every year.month;
+    2) graphs "Expiration dates - Destinations", that include:
+    - pie chart: quantity of medicine items for every destination;
+3.  Application must inform about ending of expiration dates for any medicine item.
+4.  Application must additional inform when ends the expiration dates of all medicine items for any destination
+    (that's means there are no one any suitable medicines items for some destination and there are need go to a drugstore).
+5.  Application must additional inform when ends the expiration dates of all medicine items for any user
+    (that's means this user has't any suitable medicines items and there are need go to a drugstore).
