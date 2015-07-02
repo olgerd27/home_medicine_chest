@@ -42,6 +42,7 @@
        - bar graph (stack diagram): X axis - year.month, Y axis - quantities of medicine items for every destination,
          expiration date of which ends in every year.month.
 4.3 When user click to any graph item, it must to be switching to the window "Queries" with execution the appropriate query.
+4.4 It must to be ability of export any graph in image format.
 
 5 Notifications.
 5.1 Application must inform about ending of expiration dates for any medicine item.
