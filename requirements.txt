@@ -4,36 +4,44 @@
 1.1 User must to have an ability to VIEW, INSERT, UPDATE and DELETE database data.
 
 2 The main window.
-2.1 The main window names "Medicine card". Here user may perform all operation, specified by 1.1.
-    On this window must places all data, relevant to every medicine item, with push buttons for walk through medicines items.
-    This window must looks like forms in MS Access.
-2.2 The fields, linked with some database table, must give interface to add new item in linked table.
-2.3 Also this window must include some interface for:
-    - connection to database;
-    - disconnection from database;
-    - refreshing data in application;
-    - applying changes, inputed in any field of window, to database (INSERT, UPDATE, DELETE);
+2.1 The main window is common window for all application's forms. It means that main window interface is available from any form.
+2.2 The main window interface allow:
+    - connect to database;
+    - disconnect from database;
+    - refresh data in application;
+    - open window for performing VIEW/INPUT/UPDATE/DELETE of data;
     - open window for queries execution;
-    - open window for graphs plotting.
-2.4 If user made some changes in any field he must press "Apply" (or "Save") push button, and after this he can go to another medicine card.
-    If user don't save inputed changes and try go to another medicine card, application must ask his - Do you want to save changes? (Yes, No).
+    - open window for graphs plotting;
+    - show the "About" message;
+    - close the application.
 
-3 Queries execution.
-3.1 Queries execution performs in the window "Queries".
-3.2 This window must consist 3 type of queries:
+3 VIEW/INPUT/UPDATE/DELETE of data.
+3.1 The VIEW/INPUT/UPDATE/DELETE of data performs in the form "Medicine Card".
+3.2 On this form must places all data, relevant to every medicine item, with push buttons for walk through medicines items.
+    This form must looks like forms in MS Access.
+3.3 The fields, linked with some database table, must give interface to add new item in linked table.
+3.4 This form must include the "Apply" (or "Save") push button for applying changes, inputed in any field of form, to database
+    (INSERT, UPDATE, DELETE). Only after pushing this button user can go to another medicine card.
+    If user don't save inputed changes and try go to another medicine card, application must ask him -
+    "Do you want to save inputed changes?" (Yes, No).
+
+4 Queries execution.
+4.1 Queries execution performs in the form "Queries".
+4.2 This form must consist 3 type of queries:
     1) prepared query - is ready for execution and user don't need to enter some settings;
     2) complex query - user must enter some settings;
     3) custom query - user may write a custom SQL-command directly in the field "Query field".
-3.3 When user choose any query ( 3.2 1) or 2) ) its approppriate SQL-command must place in field "Query field".
-3.4 By default the field "Query field" is disable. To make it enabled user must choose custom query and correct query command.
-3.5 The field "Query field" clears after performing a successful query execution.
-3.6 Queries by 3.2 executes only after pressing "Execute" push button.
-3.7 In bottom part of this window must places a table for showing current query execution results. The size of this table must to be variable.
+4.3 When user choose any query ( 3.2 1) or 2) ) its approppriate SQL-command must place in field "Query field".
+4.4 By default the field "Query field" is disable. To make it enabled user must choose custom query and correct query command.
+4.5 The field "Query field" clears after performing a successful query execution.
+4.6 Queries by 3.2 executes only after pressing "Execute" push button.
+4.7 In bottom part of this form must places a table for showing current query execution results.
+    The size of this table must to be variable.
 
-4 Graphs plotting.
-4.1 Graphs plotting in the window "Graphs".
-4.2 Application must plot the next graphs:
-    1) graphs window "Expiration dates - Users", that include:
+5 Graphs plotting.
+5.1 Graphs plotting in the form "Graphs".
+5.2 Application must plot the next graphs:
+    1) graphs form "Expiration dates - Users", that include:
        - pie chart: quantity of medicine items for every user;
        - bar graph (stack diagram): X axis - year.month, Y axis - quantity of medicine items for every user,
          expiration date of which ends in every year.month;
@@ -41,18 +49,17 @@
        - pie chart: quantity of medicine items for every destination;
        - bar graph (stack diagram): X axis - year.month, Y axis - quantities of medicine items for every destination,
          expiration date of which ends in every year.month.
-4.3 When user click to any graph item, it must to be switching to the window "Queries" with execution the appropriate query.
-4.4 It must to be ability of export any graph in image format.
+5.3 When user click to any graph item, it must to be switching to the form "Queries" with execution the appropriate query.
+5.4 It must to be ability of export any graph in image format.
 
-5 Notifications.
-5.1 Application must inform about ending of expiration dates for any medicine item.
-5.2 Application must additional inform when ends the expiration dates of all medicine items for any destination
+6 Notifications.
+6.1 Application must inform about ending of expiration dates for any medicine item.
+6.2 Application must additional inform when ends the expiration dates of all medicine items for any destination
     (that's means there are no one any suitable medicines items for some destination and there are need go to a drugstore).
-5.3 Application must additional inform when ends the expiration dates of all medicine items for any user
+6.3 Application must additional inform when ends the expiration dates of all medicine items for any user
     (that's means this user has't any suitable medicines items and there are need go to a drugstore).
 
-6 Pictures.
-6.1 Medicine's pictures downloads from internet (maybe from google pictures).
-6.2 There are need to download small or medium (no large) medicine's pictures from internet.
-6.3 Actually, medicine's pictures stores in file system and database store the path/name to every picture.
-
+7 Pictures.
+7.1 Medicine's pictures downloads from internet (maybe from google pictures).
+7.2 There are need to download small or medium (no large) medicine's pictures from internet.
+7.3 Actually, medicine's pictures stores in file system and database store the path/name to every picture.
