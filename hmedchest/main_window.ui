@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>794</width>
-    <height>463</height>
+    <height>493</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,14 +29,14 @@
           </property>
           <property name="minimumSize">
            <size>
-            <width>120</width>
-            <height>300</height>
+            <width>100</width>
+            <height>320</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>120</width>
-            <height>300</height>
+            <width>100</width>
+            <height>320</height>
            </size>
           </property>
           <property name="dragDropMode">
@@ -62,7 +62,8 @@
           </property>
           <item>
            <property name="text">
-            <string>Medicine Card</string>
+            <string>Medicine
+Cards</string>
            </property>
            <property name="toolTip">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Show the &lt;span style=&quot; font-weight:600;&quot;&gt;Medicine card&lt;/span&gt; panel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -72,7 +73,7 @@
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/card.png</normaloff>:/images/card.png</iconset>
+             <normaloff>:/images/choice_list_card.png</normaloff>:/images/choice_list_card.png</iconset>
            </property>
            <property name="flags">
             <set>ItemIsSelectable|ItemIsEnabled</set>
@@ -90,7 +91,7 @@
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/query.png</normaloff>:/images/query.png</iconset>
+             <normaloff>:/images/choice_list_query.png</normaloff>:/images/choice_list_query.png</iconset>
            </property>
            <property name="flags">
             <set>ItemIsSelectable|ItemIsEnabled</set>
@@ -98,7 +99,7 @@
           </item>
           <item>
            <property name="text">
-            <string>Graphs</string>
+            <string>Charts</string>
            </property>
            <property name="toolTip">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Show the &lt;span style=&quot; font-weight:600;&quot;&gt;Graphs&lt;/span&gt; panel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -108,7 +109,7 @@
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/graphs.png</normaloff>:/images/graphs.png</iconset>
+             <normaloff>:/images/choice_list_graphs.png</normaloff>:/images/choice_list_graphs.png</iconset>
            </property>
            <property name="flags">
             <set>ItemIsSelectable|ItemIsEnabled</set>

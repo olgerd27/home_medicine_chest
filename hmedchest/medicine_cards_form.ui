@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>GraphForm</class>
- <widget class="QWidget" name="GraphForm">
+ <class>MedicineCardsForm</class>
+ <widget class="QWidget" name="MedicineCardsForm">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -18,7 +18,7 @@
     <rect>
      <x>90</x>
      <y>100</y>
-     <width>241</width>
+     <width>301</width>
      <height>31</height>
     </rect>
    </property>
@@ -28,7 +28,7 @@
     </font>
    </property>
    <property name="text">
-    <string>This is the Graph Form</string>
+    <string>This is the Medicine Cards Form</string>
    </property>
   </widget>
  </widget>

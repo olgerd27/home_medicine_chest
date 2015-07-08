@@ -11,20 +11,20 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         main_window.cpp \
-    query_form.cpp \
-    graph_form.cpp \
-    medicine_card_form.cpp
+    charts_form.cpp \
+    queries_form.cpp \
+    medicine_cards_form.cpp
 
 HEADERS  += main_window.h \
-    query_form.h \
-    graph_form.h \
-    medicine_card_form.h \
-    custom_widgets.h
+    custom_widgets.h \
+    charts_form.h \
+    queries_form.h \
+    medicine_cards_form.h
 
 FORMS    += main_window.ui \
-    query_form.ui \
-    graph_form.ui \
-    medicine_card_form.ui
+    charts_form.ui \
+    queries_form.ui \
+    medicine_cards_form.ui
 
 RESOURCES += \
     resources.qrc
